@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  diagram:
+    build:
+      context: .
+      dockerfile: ./docker/diagram.Dockerfile
+    container_name: diagram
+    image: jesmigel/diagram:0.1
+    volumes:
+      - ./data:/tmp/proj
+    command:
+      - python3
+      - cluster.py
