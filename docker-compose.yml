@@ -10,5 +10,5 @@ services:
     volumes:
       - ./data:/tmp/proj
     command:
-      - python3
-      - cluster.py
+      - ./runner.sh
+      - input.txt

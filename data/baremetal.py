@@ -7,7 +7,7 @@ from diagrams.onprem.compute import Server
 from diagrams.generic.storage import Storage
 
 
-with Diagram("OnPrem", show=False):
+with Diagram("baremetal", show=False):
     nbn = Internet("NBN")
     with Cluster("Routers"):
         routers = [

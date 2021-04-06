@@ -5,11 +5,14 @@ _COMPOSE=docker-compose
 build:
 	$(_COMPOSE) build
 
-up:
+up-d:
 	$(_COMPOSE) up -d
 
+up:
+	$(_COMPOSE) up
+
 down:
-	$(_COMPOSE) down
+	$(_COMPOSE) down -v
 
 gen: down
 	rm -f data/homelab.png
@@ -18,6 +21,10 @@ gen: down
 logs:
 	$(_COMPOSE) logs
 
+status:
+	$(_COMPOSE) ps
 
-test:
-	open -a "/Applications/Google Chrome.app" 'http://google.com/'
+login:
+	$(_COMPOSE) exec diagram bash
+
+test: down build up login
