@@ -9,8 +9,10 @@ from diagrams.onprem.iac import Terraform
 from diagrams.onprem.ci import Jenkins
 from diagrams.generic.os import Ubuntu
 from diagrams.oci.storage import FileStorage
+from diagrams.generic.network import Switch
 
 with Diagram("infrastructure", show=False):
+    switch = Switch("FM Switch")
     with Cluster("Platform Controller"):
         # NGINX
         proxy = Nginx("NGINX proxy")
@@ -48,9 +50,12 @@ with Diagram("infrastructure", show=False):
             FileStorage("Controller configuration and Data files")
         ]
 
+
     ci << repo
     repo << nfsv4[2]    
     proxy << nfsv4[2]
+    switch << proxy
+
 
     with Cluster("ESXI Host"):
         # ESXI Host
@@ -63,8 +68,10 @@ with Diagram("infrastructure", show=False):
             control = Ubuntu("Control plane")
             control - Ubuntu("Worker")
 
+
         with Cluster("OpenStack - Ubuntu VM's"):
             openstack = Ubuntu("DevStack")
+
 
         # ESXI external interactions
         esxi << tf
