@@ -1,5 +1,6 @@
 from diagrams import Cluster, Diagram
-from diagrams.generic.compute import Rack, Server
+from diagrams.generic.compute import Rack
+from diagrams.onprem.compute import Server
 from diagrams.onprem.network import Internet
 from diagrams.generic.network import Router, Switch
 from diagrams.generic.storage import Storage
