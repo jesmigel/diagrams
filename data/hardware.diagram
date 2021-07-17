@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" modified="2021-07-17T12:42:11.937Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="4i1DKK_fOntMGG_2x3Ge" version="14.8.5" type="github">
+  <diagram id="AMn0Df94mqC52_YaUnfp" name="Page-1">
+    <mxGraphModel dx="1229" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QKr56KCxyiavhWd9k5hS-4" value="" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="100" y="50" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-5" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/switch.svg;" parent="1" vertex="1">
+          <mxGeometry x="210" y="170" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-9" value="RasPi" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/272_Raspberry_Pi_logo-128.png" parent="1" vertex="1">
+          <mxGeometry x="60" y="190" width="65" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-12" value="r710" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#4495D1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.vmware_host;" parent="1" vertex="1">
+          <mxGeometry x="191" y="360" width="108" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-13" value="r810" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#4495D1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.vmware_host;" parent="1" vertex="1">
+          <mxGeometry x="381" y="360" width="108" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-15" value="Synology" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#005F4B;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam2.nas;" parent="1" vertex="1">
+          <mxGeometry x="60" y="330" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-16" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="QKr56KCxyiavhWd9k5hS-5" target="QKr56KCxyiavhWd9k5hS-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="360" as="sourcePoint" />
+            <mxPoint x="590" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-17" value="" style="endArrow=classic;startArrow=classic;html=1;" parent="1" source="QKr56KCxyiavhWd9k5hS-13" target="QKr56KCxyiavhWd9k5hS-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="226.32" y="410" as="sourcePoint" />
+            <mxPoint x="220.00421052631583" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-18" value="" style="endArrow=classic;startArrow=classic;html=1;" parent="1" source="QKr56KCxyiavhWd9k5hS-12" target="QKr56KCxyiavhWd9k5hS-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="238.16" y="340" as="sourcePoint" />
+            <mxPoint x="231.84421052631583" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-19" value="" style="endArrow=classic;startArrow=classic;html=1;" parent="1" source="QKr56KCxyiavhWd9k5hS-15" target="QKr56KCxyiavhWd9k5hS-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="236.32" y="352" as="sourcePoint" />
+            <mxPoint x="230.00421052631583" y="292" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-20" value="" style="endArrow=classic;startArrow=classic;html=1;" parent="1" source="QKr56KCxyiavhWd9k5hS-9" target="QKr56KCxyiavhWd9k5hS-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="238.16" y="330" as="sourcePoint" />
+            <mxPoint x="231.84421052631583" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-21" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/switch.svg;" parent="1" vertex="1">
+          <mxGeometry x="400" y="170" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-22" value="" style="endArrow=classic;startArrow=classic;html=1;" parent="1" source="QKr56KCxyiavhWd9k5hS-12" target="QKr56KCxyiavhWd9k5hS-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="404" as="sourcePoint" />
+            <mxPoint x="530" y="354" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-23" value="" style="endArrow=classic;startArrow=classic;html=1;" parent="1" source="QKr56KCxyiavhWd9k5hS-13" target="QKr56KCxyiavhWd9k5hS-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="480" as="sourcePoint" />
+            <mxPoint x="220" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QKr56KCxyiavhWd9k5hS-24" value="" style="endArrow=classic;startArrow=classic;html=1;" parent="1" source="QKr56KCxyiavhWd9k5hS-5" target="QKr56KCxyiavhWd9k5hS-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="230" as="sourcePoint" />
+            <mxPoint x="390" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
